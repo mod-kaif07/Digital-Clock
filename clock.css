@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+  }
+  
+  /* Center Container */
+  .center {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #banner {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  #clock {
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
